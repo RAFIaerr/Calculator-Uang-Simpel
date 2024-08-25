@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Pertambahan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Uang</h1>
+        <h2> Simpel</h2>
+
+        <form id="balanceForm">
+            <label for="SaldoAwal"></label>
+            <input type="number" id="SaldoAwal" placeholder="Masukan nominal uang Anda" step="1000" required>
+        </form>
+
+        <form id="transactionForm">
+            <label for="Transaksi"></label>
+            <input type="number" id="Transaksi" placeholder="Masukan Uang Anda Yang Terpakai" step="1000" required>
+            
+            <button type="button" onclick="calculateFinalBalance()">Hitung</button>
+        </form>
+        
+        <h2>Hasil:</h2>
+        <p id="finalBalance">Rp. 0</p>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
